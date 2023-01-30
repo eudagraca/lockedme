@@ -71,7 +71,12 @@ public class ApplicationScreen {
 			break;
 		}
 
-		default -> System.out.println("Unexpected value: " + option + " closing");
+		default -> {
+			System.out.println("Unexpected value: " + option);
+			fileMenuExecution();
+
+		}
+
 		}
 	}
 
@@ -110,8 +115,10 @@ public class ApplicationScreen {
 			fileMenuExecution();
 			break;
 		}
-		default -> System.out.println("Unexpected value: " + option + " closing");
-
+		default -> {
+			System.out.println("Unexpected value: " + option);
+			appMenuExecution();
+		}
 		}
 	}
 

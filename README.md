@@ -6,11 +6,12 @@ The App searches and delete files.
 
 This project is part of Phase I training Java FullStack Development program.
 
-##### Keys:
+###### Keys:
 <li>Java</li>
 <li>Collections</li>
 <li>OOP</li>
 <li>Exception Handling</li>
+<li>Sort techniques</li>
 
 
 ##### Packages
