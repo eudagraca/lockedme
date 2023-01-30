@@ -6,6 +6,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
@@ -97,21 +99,20 @@ public class FileOperationService extends FileOperation {
 	@Override
 	public void allFiles() {
 		File directory = new File(Paths.get(getPath()).toString());
-		Set<String> files = new TreeSet<String>();
+		File[] files = directory.listFiles();
+		List<File> filesList = Arrays.asList(files);
+		Collections.sort(filesList);
 		if (createFolderIfNotExists()) {
 
 			System.out.println("\n--------------------------------------------------------------");
 			System.out.println(String.format("Displaying all Files from the directory : %s", directory));
 			System.out.println("--------------------------------------------------------------");
 
-			if (directory.listFiles().length > 0) {
+			if (filesList.size() > 0) {
 
-				for (File file : directory.listFiles()) {
-					files.add(file.getName());
-				}
-
-				for (String file : files) {
-					System.out.println(file);
+				for (File file : filesList) {
+					
+					System.out.println(file.getName());
 				}
 
 			} else {
@@ -119,7 +120,7 @@ public class FileOperationService extends FileOperation {
 				System.out.println("--------   File Not Found");
 
 			}
-
 		}
+		System.out.println();
 	}
 }
