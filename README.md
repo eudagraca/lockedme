@@ -28,6 +28,6 @@ This project is part of Phase I training Java FullStack Development program.
 | 	:-----:	 | 	:-----:	 | 
 | 	`FileOperationService.java`	 | 	Define all the operations required for, adding, delete and searching files | 
 | 	`FileOperation.java` | 	Define all the implementation of the operations that will be handled on FileOperationService.java	 |
-| 	`Developer.java`	 | 	Represents developer datails	 |
-| 	`ApplicationScreen.java`	 | 	Contains the methods for display menu amd the options for user input and call respective methods from FileOperationService.java	 |
+| 	`Developer.java`	 | 	Represents developer details	 |
+| 	`ApplicationScreen.java`	 | 	Contains the methods for menu display and the options for user input and call respective methods from FileOperationService.java	 |
 | 	`Main.java`	 | 	Is the entry point of the application	 |

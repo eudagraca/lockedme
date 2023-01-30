@@ -1,7 +1,6 @@
 package lockedme.com;
 
 import java.util.Scanner;
-
 import models.Developer;
 import service.FileOperationService;
 
